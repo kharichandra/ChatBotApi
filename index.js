@@ -28,4 +28,4 @@ app.post('/movie',(req,res) =>{
     res.send("Movie added in the list");
 })
 
-app.listen(port,()=> console.log(`Server listening on port ${port}`));
+app.listen(process.env.PORT || port,()=> console.log(`Server listening on port ${port}`));
